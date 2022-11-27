@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Components</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            height: 7000px;
+            /* background-color: gray; */
+        }
+    </style>
+</head>
+
+<body class=" m-2">
+    <h2>Bootstrap Components</h2>
+    <h3>Alerts</h3>
+    <div class=" alert alert-danger">
+        <h4 class=" alert-heading">Title 1</h4>
+        <p class=" mb-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laboriosam amet maxime aspernatur ratione.
+            Optio ipsam voluptas tempore debitis sint itaque labore doloremque, neque consectetur deleniti, cumque quos
+            laboriosam. Minima.
+        </p>
+    </div>
+    <div class=" alert alert-success">
+        <h4 class=" alert-heading">Title 2</h4>
+        <p class=" mb-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam incidunt repudiandae tempora omnis veritatis in
+            officia ea eaque ullam fugit minus mollitia, pariatur consectetur tempore adipisci vitae laborum commodi!
+            Aspernatur.
+        </p>
+    </div>
+
+    <div class=" alert alert-info">
+        <h4 class=" alert-heading">Title 3</h4>
+        <p class=" mb-0">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum porro facilis laudantium placeat vitae.
+            Delectus dolor provident nesciunt. Vel officia, beatae molestias quia tempore corporis quidem laudantium
+            fugiat perspiciatis suscipit?
+        </p>
+    </div>
+
+    <!-- Dismissing -->
+    <div class=" alert alert-warning" data-bs-dismiss="alert">
+        <div class=" d-flex justify-content-between">
+            <h4 class=" alert-heading">Dismissing</h4>
+            <button class=" btn btn-close"></button>
+        </div>
+        <p class=" mb-0">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus excepturi architecto nihil minima veniam
+            eveniet assumenda deleniti! Repellendus, veritatis, quaerat sequi officiis reiciendis fuga explicabo ea
+            dolorem quia, vitae saepe.
+        </p>
+    </div>
+
+    <hr>
+
+    <h3>Badge</h3>
+    <h2>
+        Notifications
+        <span class=" badge bg-secondary rounded-pill">12</span>
+    </h2>
+    <button class=" btn btn-primary position-relative">
+        Click Me
+        <span class=" badge bg-danger position-absolute top-0 start-100 translate-middle">12</span>
+    </button>
+
+    <hr>
+
+    <h3>Breadcumb</h3>
+    <ol class=" breadcrumb">
+        <li class=" breadcrumb-item"><a href="#">C</a></li>
+        <li class=" breadcrumb-item"><a href="#">User</a></li>
+        <li class=" breadcrumb-item">TTT</li>
+    </ol>
+
+    <hr>
+
+    <h3>Buttons</h3>
+
+    <div class="mb-3">
+        <button class=" btn btn-primary btn-lg">Click Me</button>
+        <button class=" btn btn-secondary btn-lg">Click Me</button>
+        <button class=" btn btn-danger btn-lg">Click Me</button>
+        <button class=" btn btn-warning btn-lg">Click Me</button>
+        <button class=" btn btn-info btn-lg">Click Me</button>
+    </div>
+    <div class="mb-3">
+        <button class=" btn btn-primary">Click Me</button>
+        <button class=" btn btn-secondary">Click Me</button>
+        <button class=" btn btn-danger">Click Me</button>
+        <button class=" btn btn-warning">Click Me</button>
+        <button class=" btn btn-info">Click Me</button>
+    </div>
+    <div class="mb-3">
+        <button class=" btn btn-outline-primary btn-sm">Click Me</button>
+        <button class=" btn btn-outline-secondary btn-sm">Click Me</button>
+        <button class=" btn btn-outline-danger btn-sm">Click Me</button>
+        <button class=" btn btn-outline-warning btn-sm">Click Me</button>
+        <button class=" btn btn-outline-info btn-sm">Click Me</button>
+    </div>
+    <div class=" mb-3 btn-group">
+        <button class=" btn btn-primary active">
+            <i class=" fa fa-home fa-fw"></i>
+        </button>
+        <button class=" btn btn-primary">
+            <i class=" fa fa-trash fa-fw"></i>
+        </button>
+        <button class=" btn btn-primary">
+            <i class=" fa fa-pencil fa-fw"></i>
+        </button>
+    </div>
+    <div class=" mb-3 btn-group">
+        <button class=" btn btn-outline-primary active">
+            <i class=" fa fa-home fa-fw"></i>
+        </button>
+        <button class=" btn btn-outline-primary">
+            <i class=" fa fa-trash fa-fw"></i>
+        </button>
+        <button class=" btn btn-outline-primary">
+            <i class=" fa fa-pencil fa-fw"></i>
+        </button>
+    </div>
+
+    <hr>
+
+    <h3>Carousel</h3>
+    <h4>Slide Only</h4>
+    <div class=" carousel slide" id="img-slide" data-bs-ride="carousel">
+        <div class=" carousel-inner">
+            <div class=" carousel-item active">
+                <img src="./img/1.jpg" class="w-75" alt="">
+            </div>
+            <div class=" carousel-item">
+                <img src="./img/2.jpg" class="w-75" alt="">
+            </div>
+            <div class=" carousel-item">
+                <img src="./img/3.jpg" class="w-75" alt="">
+            </div>
+        </div>
+    </div>
+
+    <h4 class=" mt-3">With Controls</h4>
+    <div id="img-slide-control" class=" carousel slide w-75" data-bs-ride=" carousel">
+        <div class=" carousel-inner">
+            <div class=" carousel-item active">
+                <img src="./img/1.jpg" class=" w-100" alt="">
+            </div>
+            <div class=" carousel-item">
+                <img src="./img/2.jpg" class=" w-100" alt="">
+            </div>
+            <div class=" carousel-item">
+                <img src="./img/3.jpg" class=" w-100" alt="">
+            </div>
+        </div>
+        <button class=" carousel-control-prev" data-bs-target="#img-slide-control" data-bs-slide="prev">
+            <span class=" carousel-control-prev-icon"></span>
+        </button>
+        <button class=" carousel-control-next" data-bs-target="#img-slide-control" data-bs-slide="next">
+            <span class=" carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <h4 class=" mt-3">With Indicators</h4>
+    <div id="img-slide-indicator" class=" carousel slide w-75" data-bs-ride=" carousel">
+        <div class=" carousel-indicators">
+            <button class=" active" data-bs-target="#img-slide-indicator" data-bs-slide-to="0"></button>
+            <button class="" data-bs-target="#img-slide-indicator" data-bs-slide-to="1"></button>
+            <button class="" data-bs-target="#img-slide-indicator" data-bs-slide-to="2"></button>
+        </div>
+        <div class=" carousel-inner">
+            <div class=" carousel-item active">
+                <img src="./img/1.jpg" class=" w-100" alt="">
+            </div>
+            <div class=" carousel-item">
+                <img src="./img/2.jpg" class=" w-100" alt="">
+            </div>
+            <div class=" carousel-item">
+                <img src="./img/3.jpg" class=" w-100" alt="">
+            </div>
+        </div>
+        <button class=" carousel-control-prev" data-bs-target="#img-slide-indicator" data-bs-slide="prev">
+            <span class=" carousel-control-prev-icon"></span>
+        </button>
+        <button class=" carousel-control-next" data-bs-target="#img-slide-indicator" data-bs-slide="next">
+            <span class=" carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <h4 class=" mt-3">With Caption</h4>
+    <div id="img-slide-caption" class=" carousel slide w-75" data-bs-ride=" carousel">
+        <div class=" carousel-indicators">
+            <button class=" active" data-bs-target="#img-slide-caption" data-bs-slide-to="0"></button>
+            <button class="" data-bs-target="#img-slide-caption" data-bs-slide-to="1"></button>
+            <button class="" data-bs-target="#img-slide-caption" data-bs-slide-to="2"></button>
+        </div>
+        <div class=" carousel-inner">
+            <div class=" carousel-item active">
+                <img src="./img/1.jpg" class=" w-100" alt="">
+                <div class=" carousel-caption">
+                    <h5>First Image</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class=" carousel-item">
+                <img src="./img/2.jpg" class=" w-100" alt="">
+                <div class=" carousel-caption">
+                    <h5>Second Image</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class=" carousel-item">
+                <img src="./img/3.jpg" class=" w-100" alt="">
+                <div class=" carousel-caption">
+                    <h5>Third Image</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class=" carousel-control-prev" data-bs-target="#img-slide-caption" data-bs-slide="prev">
+            <span class=" carousel-control-prev-icon"></span>
+        </button>
+        <button class=" carousel-control-next" data-bs-target="#img-slide-caption" data-bs-slide="next">
+            <span class=" carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <h4 class=" mt-3">Carousel Fade</h4>
+    <div id="img-slide-fade" class=" carousel slide carousel-fade w-75" data-bs-ride=" carousel">
+        <div class=" carousel-indicators">
+            <button class=" active" data-bs-target="#img-slide-fade" data-bs-slide-to="0"></button>
+            <button class="" data-bs-target="#img-slide-fade" data-bs-slide-to="1"></button>
+            <button class="" data-bs-target="#img-slide-fade" data-bs-slide-to="2"></button>
+        </div>
+        <div class=" carousel-inner">
+            <div class=" carousel-item active">
+                <img src="./img/1.jpg" class=" w-100" alt="">
+                <div class=" carousel-caption">
+                    <h5>First Image</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class=" carousel-item">
+                <img src="./img/2.jpg" class=" w-100" alt="">
+                <div class=" carousel-caption">
+                    <h5>Second Image</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class=" carousel-item">
+                <img src="./img/3.jpg" class=" w-100" alt="">
+                <div class=" carousel-caption">
+                    <h5>Third Image</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class=" carousel-control-prev" data-bs-target="#img-slide-fade" data-bs-slide="prev">
+            <span class=" carousel-control-prev-icon"></span>
+        </button>
+        <button class=" carousel-control-next" data-bs-target="#img-slide-fade" data-bs-slide="next">
+            <span class=" carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <hr>
+
+    <h3>Modal</h3>
+
+    <!-- Button trigger modal -->
+    <button class=" btn btn-primary m-3" data-bs-toggle="modal" data-bs-target="#modal-label">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class=" modal fade" id="modal-label">
+        <div class=" modal-dialog">
+            <div class=" modal-content">
+                <div class=" modal-header">
+                    <h2 class=" modal-title">Modal Title</h2>
+                    <button class=" btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class=" modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit praesentium,
+                        doloremque ipsam ducimus illo perspiciatis sint harum laudantium qui adipisci labore. Aliquam
+                        doloremque rem distinctio labore, perspiciatis culpa earum.
+                    </p>
+                    <img class=" w-100" src="./img/1.jpg" alt="">
+                </div>
+                <div class=" modal-footer">
+                    <button class=" btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class=" btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Button trigger modal -->
+     <button class=" btn btn-primary m-3" data-bs-toggle="modal" data-bs-target="#modal-label-backdrop">
+        Launch backdrop demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class=" modal fade" id="modal-label-backdrop" data-bs-backdrop="static">
+        <div class=" modal-dialog">
+            <div class=" modal-content">
+                <div class=" modal-header">
+                    <h2 class=" modal-title">Modal Title</h2>
+                    <button class=" btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class=" modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit praesentium,
+                        doloremque ipsam ducimus illo perspiciatis sint harum laudantium qui adipisci labore. Aliquam
+                        doloremque rem distinctio labore, perspiciatis culpa earum.
+                    </p>
+                    <img class=" w-100" src="./img/1.jpg" alt="">
+                </div>
+                <div class=" modal-footer">
+                    <button class=" btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class=" btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Button trigger modal -->
+     <button class=" btn btn-primary m-3" data-bs-toggle="modal" data-bs-target="#modal-label-long-content">
+        Launch long content demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class=" modal fade" id="modal-label-long-content" data-bs-backdrop="static">
+        <div class=" modal-dialog modal-dialog-scrollable">
+            <div class=" modal-content">
+                <div class=" modal-header">
+                    <h2 class=" modal-title">Modal Title</h2>
+                    <button class=" btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class=" modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit hic nulla temporibus similique omnis aliquid provident odio soluta magni voluptates ipsum modi eligendi aperiam praesentium, veritatis sed dolores, molestias neque.
+                        Neque recusandae laborum maxime culpa odit tempore repudiandae eligendi vero, eius at enim exercitationem veritatis ut cupiditate veniam amet blanditiis molestias et. Voluptates, recusandae magni! Odit error possimus autem doloremque?
+                        Modi, explicabo enim dignissimos fugiat maxime ipsa quisquam. Quam, nesciunt necessitatibus ut ab quaerat deleniti labore laudantium facere, neque, voluptatum quibusdam? Exercitationem nihil magnam sapiente perferendis nesciunt culpa. Iusto, sint.
+                        Laborum optio ut delectus perspiciatis amet. Quos doloribus recusandae sapiente ullam facilis hic a rerum asperiores similique quisquam pariatur cupiditate dolor doloremque consequatur, neque amet rem provident deserunt labore odio?
+                        Dignissimos cupiditate repudiandae nobis! Totam animi sunt maiores commodi placeat magni minima voluptas, ratione voluptatum numquam. Harum, dolore sapiente sint, nisi temporibus eligendi veritatis perspiciatis, incidunt totam dolores atque aut.
+                    </p>
+                    <img class=" w-100" src="./img/1.jpg" alt="">
+                </div>
+                <div class=" modal-footer">
+                    <button class=" btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class=" btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <button class=" btn btn-primary" data-bs-toggle="modal" data-bs-target="#text-modal">Click Me</button>
+
+    <!-- Modal -->
+    <div class=" modal" id="text-modal">
+        <div class=" modal-dialog modal-dialog-centered">
+            <div class=" modal-content p-5 d-flex justify-content-center">
+                <h2>Hello Everyone!!!</h2>
+                <button class=" btn btn-close" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+
+<hr>
+
+<h4>Offcanvas</h4>
+
+<!-- Link Offcanvas -->
+<a href="#offcanvas" data-bs-toggle="offcanvas" class="btn btn-primary">
+Link with href
+</a>
+<button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+Button with data-bs-target
+</button>
+
+<div class="offcanvas offcanvas-start" id="offcanvas" data-bs-backdrop="false">
+	<div class="offcanvas-header">
+		<h3>Title</h3>
+		<button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+	</div>
+	<div class="offcanvas-body">
+		 <p>
+Laborum optio ut delectus perspiciatis amet. Quos doloribus recusandae sapiente ullam facilis hic a rerum asperiores similique quisquam pariatur cupiditate dolor doloremque consequatur, neque amet rem provident deserunt labore odio?
+ Laborum optio ut delectus perspiciatis amet. Quos doloribus recusandae sapiente ullam facilis hic a rerum asperiores similique quisquam pariatur cupiditate dolor doloremque consequatur, neque amet rem provident deserunt labore odio?
+ Laborum optio ut delectus perspiciatis amet. Quos doloribus recusandae sapiente ullam facilis hic a rerum asperiores similique quisquam pariatur cupiditate dolor doloremque consequatur, neque amet rem provident deserunt labore odio?
+ Laborum optio ut delectus perspiciatis amet. Quos doloribus recusandae sapiente ullam facilis hic a rerum asperiores similique quisquam pariatur cupiditate dolor doloremque consequatur, neque amet rem provident deserunt labore odio?
+ Laborum optio ut delectus perspiciatis amet. Quos doloribus recusandae sapiente ullam facilis hic a rerum asperiores similique quisquam pariatur cupiditate dolor doloremque consequatur, neque amet rem provident deserunt labore odio?
+</p>
+<img class=" w-100" src="./img/2.jpg" alt="">
+	</div>
+	<div class="offcanvas-footer m-3">
+		<button class="btn btn-secondary" data-bs-dismiss="offcanvas">Close</button>
+		<button class="btn btn-primary">Save Changes</button>
+	</div>
+</div>
+
+<hr>
+<h3>Pagination</h3>
+<ul class="pagination pagination-lg">
+	<li class="page-item">
+		<a href="#" class="page-link">Previous</a>
+	</li>
+	<li class="page-item">
+		<a href="#" class="page-link">1</a>
+	</li>
+	<li class="page-item">
+		<a href="#" class="page-link">2</a>
+	</li>
+	<li class="page-item">
+		<a href="#" class="page-link">3</a>
+	</li>
+	<li class="page-item">
+		<a href="#" class="page-link">Next</a>
+	</li>
+</ul>
+
+<ul class="pagination">
+	<li class="page-item">
+		<a href="#" class="page-link">
+			<i class="bi bi-arrow-left"></i>
+		</a>
+	</li>
+	<li class="page-item">
+		<a href="#" class="page-link">1</a>
+	</li>
+	<li class="page-item">
+		<a href="#" class="page-link">2</a>
+	</li>
+	<li class="page-item">
+		<a href="#" class="page-link">3</a>
+	</li>
+	<li class="page-item">
+		<a href="#" class="page-link">
+			<i class="bi bi-arrow-right"></i>
+		</a>
+	</li>
+</ul>
+
+<ul class="pagination pagination-sm">
+	<li class="page-item">
+		<a href="#" class="page-link disabled">Previous</a>
+	</li>
+	<li class="page-item">
+		<a href="#" class="page-link active">1</a>
+	</li>
+	<li class="page-item">
+		<a href="#" class="page-link">2</a>
+	</li>
+	<li class="page-item">
+		<a href="#" class="page-link">3</a>
+	</li>
+	<li class="page-item">
+		<a href="#" class="page-link">Next</a>
+	</li>
+</ul>
+
+<hr>
+
+<h3>Progess</h3>
+<div class="progress mb-3 ">
+	<div class="progress-bar"></div>
+</div>
+
+<div class="progress mb-3" style="height:30px;">
+	<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:25%;">25%</div>
+</div>
+
+<div class="progress mb-3">
+	<div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:50%;">50%</div>
+</div>
+
+<div class="progress mb-3">
+	<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:75%;">75%</div>
+</div>
+
+<div class="progress mb-3">
+	<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:100%;">100%</div>
+</div>
+
+<hr>
+
+<h3>Spinners</h3>
+<div class="mb-3">
+	<span class="spinner-border spinner-border-sm"></span>
+	<span class="spinner-border spinner-border-sm text-light"></span>
+	<span class="spinner-border spinner-border-sm text-primary"></span>
+	<span class="spinner-border spinner-border-sm text-info"></span>
+	<span class="spinner-border spinner-border-sm text-danger"></span>
+	<span class="spinner-border spinner-border-sm text-warning"></span>
+	<span class="spinner-border spinner-border-sm text-success"></span>
+</div>
+
+<div class="mb-3">
+	<span class="spinner-grow spinner-grow-sm"></span>
+	<span class="spinner-grow spinner-grow-sm text-light"></span>
+	<span class="spinner-grow spinner-grow-sm text-primary"></span>
+	<span class="spinner-grow spinner-grow-sm text-info"></span>
+	<span class="spinner-grow spinner-grow-sm text-danger"></span>
+	<span class="spinner-grow spinner-grow-sm text-warning"></span>
+	<span class="spinner-grow spinner-grow-sm text-success"></span>
+</div>
+
+<div class="mb-3">
+	<span class="spinner-border"></span>
+	<span class="spinner-border text-light"></span>
+	<span class="spinner-border text-primary"></span>
+	<span class="spinner-border text-info"></span>
+	<span class="spinner-border text-danger"></span>
+	<span class="spinner-border text-warning"></span>
+	<span class="spinner-border text-success"></span>
+</div>
+
+<div class="mb-3">
+	<span class="spinner-grow"></span>
+	<span class="spinner-grow text-light"></span>
+	<span class="spinner-grow text-primary"></span>
+	<span class="spinner-grow text-info"></span>
+	<span class="spinner-grow text-danger"></span>
+	<span class="spinner-grow text-warning"></span>
+	<span class="spinner-grow text-success"></span>
+</div>
+
+<div class="mb-3">
+	<button class="btn btn-primary">
+		<span class="spinner-border spinner-border-sm"></span>
+	</button>
+	<button class="btn btn-primary">
+		<span class="spinner-border spinner-border-sm"></span>
+		<span>Loading...</span>
+	</button>
+</div>
+
+<div class="mb-3">
+	<button class="btn btn-primary">
+		<span class="spinner-grow spinner-grow-sm"></span>
+	</button>
+	<button class="btn btn-primary">
+		<span class="spinner-grow spinner-grow-sm"></span>
+		<span>Loading...</span>
+	</button>
+</div>
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
